@@ -73,9 +73,13 @@ Returns XML data as string.
 I thought, I want a simple and easy XML parsing module. And its directivity are followings.
 
 1\. Parsable with XPath
+
 2\. Less Rules
+
 3\. Depth Preference Parsing
+
 4\. Iterative Processing to horizontally
+
 5\. Lightweight
 
 Some months ago, I wrote XML::XPath::Diver as a concept release of above. But, that inherits [XML::XPath](http://search.cpan.org/perldoc?XML::XPath). [XML::XPath](http://search.cpan.org/perldoc?XML::XPath) has been abandoned for a long time (Last update is 26 Jan. 2003). For this reason, I decided to remove its dependency.

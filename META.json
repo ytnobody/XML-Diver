@@ -55,6 +55,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ytnobody/XML-Diver/issues"
+      },
+      "homepage" : "https://github.com/ytnobody/XML-Diver",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ytnobody/XML-Diver.git",
+         "web" : "https://github.com/ytnobody/XML-Diver"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:YTURTLE"
 }
