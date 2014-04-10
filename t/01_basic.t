@@ -2,6 +2,7 @@ use strict;
 use Test::More;
 use XML::Diver;
 
+our ($a, $b);
 my $xml = do { local $/; <DATA> };
 my $diver = XML::Diver->load_xml(string => $xml);
 

@@ -90,11 +90,11 @@ For this reason, It can as following.
     # case of primitive array
     my @child_nodes = map {( $_->dive($some_xpath) )} @nodes;
 
-=head1 attr
+=head2 attr
 
 Returns string value of attribute that specified.
 
-=head1 text
+=head2 text
 
     my $str = $diver->text($xpath);
 
@@ -102,9 +102,27 @@ Returns string that contained in specified xpath element.
 
 $xpath is default '/'.
 
-=head1 to_string
+=head2 to_string
 
 Returns XML data as string.
+
+=head1 MOTIVE
+
+I thought, I want a simple and easy XML parsing module. And its directivity are followings.
+
+1. Parsable with XPath
+2. Less Rules
+3. Depth Preference Parsing
+4. Iterative Processing to horizontally
+5. Lightweight
+
+Some months ago, I wrote XML::XPath::Diver as a concept release of above. But, that inherits L<XML::XPath>. L<XML::XPath> has been abandoned for a long time (Last update is 26 Jan. 2003). For this reason, I decided to remove its dependency.
+
+Then, I wrote this module (without "XPath" string in dist-name!).
+
+=head1 PERFORMANCE
+
+300% or over faster than XML::XPath::Diver. See L<https://gist.github.com/ytnobody/10354590/>
 
 =head1 LICENSE
 
